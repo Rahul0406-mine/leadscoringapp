@@ -1,0 +1,60 @@
+# Dependencies
+/node_modules
+/backend/venv
+/backend/Pipfile.lock
+/dist
+/coverage
+
+# Build files
+/build
+/out
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#IDX specific
+.idx
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+.Python
+/pip-selfcheck.json
+/lib/python*/
+/bin/python*
+/include/python*/
+/share/python*/
+/local/
+/pip-selfcheck.json
+/get-pip.py
+Pipfile
+Pipfile.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
