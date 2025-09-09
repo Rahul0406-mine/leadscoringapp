@@ -1,0 +1,13 @@
+repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: 'v3.0.3'
+    hooks:
+      - id: prettier
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: 'v8.52.0'
+    hooks:
+      - id: eslint
+  - repo: https://github.com/trimstray/match-commit-message
+    rev: 'v1.1.1'
+    hooks:
+      - id: match-commit-message
