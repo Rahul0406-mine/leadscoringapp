@@ -1,0 +1,6 @@
+fastapi
+firebase-admin
+sqlmodel
+psycopg2-binary
+alembic
+uvicorn
