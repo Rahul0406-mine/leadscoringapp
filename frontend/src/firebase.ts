@@ -1,20 +1,22 @@
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getMessaging } from "firebase/messaging";
 
-// Your web app's Firebase configuration
-// Replace with your project's credentials
+// Your web app's Firebase configuration via environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyBop2f2GAoYYtV-KzLASmk9vTJfOiBELDs",
-  authDomain: "leadscoringapp-6be19.firebaseapp.com",
-  projectId: "leadscoringapp-6be19",
-  storageBucket: "leadscoringapp-6be19.firebasestorage.app",
-  messagingSenderId: "9928659812",
-  appId: "1:9928659812:web:96283e7003df3362eb6071",
-  measurementId: "G-FVNP6LGMZJ"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
 export const messaging = getMessaging(app);
+export default app;
