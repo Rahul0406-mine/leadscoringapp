@@ -11,13 +11,12 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.57.4",
-    "@types/uuid": "^10.0.0",
+    "@tailwindcss/postcss": "^4.1.13",
+    "firebase": "^12.2.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.8.2",
-    "reactflow": "^11.11.4",
-    "uuid": "^13.0.0"
+    "reactflow": "^11.11.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
