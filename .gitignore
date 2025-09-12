@@ -1,2 +1,3 @@
 backend/firebase-credentials.json
 node_modules
+.env
