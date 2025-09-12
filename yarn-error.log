@@ -1,0 +1,85 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add -D @tailwindcss/postcss postcss autofixer
+
+PATH: 
+  /bin:/usr/bin:/usr/local/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.19.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/autofixer: Not found
+      at params.callback (/usr/local/lib/node_modules/yarn/dist/yarn.js:56412:18)
+      at self.callback (/usr/local/lib/node_modules/yarn/dist/yarn.js:124812:22)
+      at Request.emit (node:events:30:11034)
+      at Request.eval (/usr/local/lib/node_modules/yarn/dist/yarn.js:125784:10)
+      at Request.emit (node:events:30:11034)
+      at IncomingMessage.eval (/usr/local/lib/node_modules/yarn/dist/yarn.js:125706:12)
+      at Object.onceWrapper (node:events:30:8244)
+      at IncomingMessage.emit (node:events:30:11150)
+      at endReadableNT (node:internal/streams/readable:230:10631)
+      at processTicksAndRejections (node:internal/process/task_queues:196:1067)
+
+npm manifest: 
+  {
+    "name": "leadscoring-frontend",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+      "preview": "vite preview",
+      "format": "prettier --write ."
+    },
+    "dependencies": {
+      "@supabase/supabase-js": "^2.57.4",
+      "firebase": "^12.2.1",
+      "react": "^19.1.1",
+      "react-dom": "^19.1.1",
+      "react-router-dom": "^7.8.2",
+      "reactflow": "^11.11.4",
+      "uuid": "^13.0.0"
+    },
+    "devDependencies": {
+      "@eslint/js": "^9.33.0",
+      "@tailwindcss/postcss": "^4.1.13",
+      "@types/babel__core": "^7.20.5",
+      "@types/babel__generator": "^7.27.0",
+      "@types/babel__template": "^7.4.4",
+      "@types/babel__traverse": "^7.28.0",
+      "@types/json-schema": "^7.0.15",
+      "@types/node": "^24.3.1",
+      "@types/react": "^19.1.10",
+      "@types/react-dom": "^19.1.7",
+      "@types/uuid": "^10.0.0",
+      "@vitejs/plugin-react": "^5.0.0",
+      "autoprefixer": "^10.4.21",
+      "eslint": "^9.33.0",
+      "eslint-plugin-react-hooks": "^5.2.0",
+      "eslint-plugin-react-refresh": "^0.4.20",
+      "globals": "^16.3.0",
+      "postcss": "^8.5.6",
+      "prettier": "^3.0.0",
+      "tailwindcss": "^4.1.13",
+      "typescript": "~5.8.3",
+      "typescript-eslint": "^8.39.1",
+      "vite": "^7.1.2"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
